@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Currency Converter</h1>
+    </div>
+    <div id="from-to">
+        <div class="from-to-2" id="From">
+            <h1 style="margin-bottom: 30px;">From</h1>
+            <div id="img-box">
+                <img src="https://flagsapi.com/US/flat/64.png" />
+                <select name="from"></select>
+            </div>
+        </div>
+        <div class="icone-amount">
+            <i id="icone" class="fa-solid fa-arrow-right-arrow-left"></i>
+            <input type="text" placeholder="Enter Amount" id="Enter-amount">
+        </div>
+        <div class="from-to-2" id="To">
+            <h1 style="margin-bottom: 30px;">To</h1>
+            <div id="img-box">
+                <img src="https://flagsapi.com/IN/flat/64.png" />
+                <select name="to"></select> 
+            </div>
+        </div>
+    </div>
+    <div id="convert-box">
+        <button id="Convert-btn"><h1>Convert</h1></button>
+    </div>
+    <div id="result">
+        <h3 id="unit-rate">1 USD = 83.7398 INR</h3>
+        <h1 id="final-result"></h1>
+    </div>
+
+    <script src="country-currency.js"></script> 
+    <script src="currency.js"></script>   
+</body>
+</html>
